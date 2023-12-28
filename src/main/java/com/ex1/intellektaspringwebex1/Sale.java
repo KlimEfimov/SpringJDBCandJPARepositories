@@ -3,21 +3,27 @@ package com.ex1.intellektaspringwebex1;
 import java.sql.Date;
 
 public class Sale {
-    private int id;
+    private long id;
     private String product_id;
     private Date store_date;
     private Date sales_date;
     private float price;
 
     public Sale() {
-        id = 0;
         product_id = "0000";
         store_date = new Date(0);
         sales_date = store_date;
         price = 0;
     }
 
-    public int getId() {
+    public Sale(String product_id, Date store_date, Date sales_date, float price) {
+        this.product_id = product_id;
+        this.store_date = store_date;
+        this.sales_date = sales_date;
+        this.price = price;
+    }
+
+    public long getId() {
         return id;
     }
 

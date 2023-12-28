@@ -29,9 +29,8 @@ public class SpringConfig {
         return new JdbcTemplate(dataSource());
     }
 
-    @Bean
-    SalesJPARepositoryImplementation testImpl(SalesJPARepository repository) {
-        return new SalesJPARepositoryImplementation(repository);
-    }
+
+
+
 
 }

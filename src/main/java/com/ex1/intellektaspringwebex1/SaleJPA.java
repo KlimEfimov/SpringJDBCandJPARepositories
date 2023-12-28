@@ -18,9 +18,12 @@ public class SaleJPA {
 
     @Id
     @Column(name = "id", nullable = false)
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "sales_is_seq")
-    @SequenceGenerator(name = "sales_is_seq", sequenceName = "sales_is_seq", allocationSize = 1)
-    private int id;
+//    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "sales_is_seq")
+//    @GeneratedValue(strategy = GenerationType.AUTO)
+//    @SequenceGenerator(name = "sales_is_seq", sequenceName = "sales_is_seq", allocationSize = 1)
+//    @GeneratedValue(strategy = javax.persistence.GenerationType.IDENTITY )
+//    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    private long id;
 
     @Column(name = "product_id")
     private String product_id;
